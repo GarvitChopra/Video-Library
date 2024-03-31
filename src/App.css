@@ -1,0 +1,140 @@
+body {
+  background-image: url('./bg1.avif');
+  background-size: cover; 
+  background-position: center; 
+  /* background-repeat: no-repeat;  */
+  height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: black;
+  font-family: sans-serif;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-btn {
+  background-color: #324a64;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.video-item {
+  border: 2px solid #eee;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-item p {
+  margin: 15px 0 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.video-item button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.video-item button:hover {
+  background-color: #218838;
+}
+
+.video-player {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.video-player video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-btn:hover {
+  background-color: #c82333;
+}
+
+.bookmark-btn {
+  background-color: #ffc107;
+}
+
+.bookmarked {
+  background-color: #28a745;
+}
+
+.btn-1 {
+  border-radius: 10px;
+  background-color: #324a64;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #14283d;
+}
+
+.btn-1:hover {
+  background-color: #0056b3;
+}
